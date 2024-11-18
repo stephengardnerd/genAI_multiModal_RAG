@@ -59,7 +59,6 @@ The frontend of the RAG system is built using **React**. It provides an intuitiv
 
 The folder structure of the frontend ensures modularity and maintainability.
 
-```plaintext
 frontend/
 ├── public/                   # Public static files (e.g., index.html)
 ├── src/                      # Source files
@@ -82,7 +81,6 @@ The RAG system uses a `docker-compose.yml` file to orchestrate its services, inc
 
 ### **docker-compose.yml**
 
-```yaml
 version: "3.8"
 
 services:
@@ -135,7 +133,7 @@ Injection vulnerabilities occur when untrusted data is sent to a system and exec
   - Filenames are sanitized using `secure_filename` from Flask.
 
 - **Example Code**:
-  ```python
+
   def allowed_file(filename):
       return "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXTENSIONS
 
@@ -188,7 +186,7 @@ This guide details the setup and usage of the system on macOS, specifically opti
 ## **Setup Instructions**
 
 ### **1. Clone the Repository**
-```bash
+
 git clone https://github.com/stephengardnerd/genAI_multiModal_RAG.git
 cd rag-system
 
