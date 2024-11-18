@@ -46,11 +46,11 @@ device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
 
 # Initialize AI models
 sentence_model = SentenceTransformer("all-MiniLM-L6-v2", device=device)  # Semantic search embeddings
-whisper_model = whisper.load_model("base").to(device)  # Audio transcription
-lama_tokenizer = LlamaTokenizer.from_pretrained("backend/models/meta/llama-2-7b")
-llama_model = LlamaForCausalLM.from_pretrained("backend/models/meta/llama-2-7b").to(device)
-clip_model = CLIPModel.from_pretrained("backend/models/openai/clip-vit-base-patch32").to(device)
-clip_processor = CLIPProcessor.from_pretrained("backend/models/openai/clip-vit-base-patch32")
+whisper_model = whisper.load_model("backend/models/whisper").to(device)  # Audio transcription
+lama_tokenizer = LlamaTokenizer.from_pretrained("backend/models/llama/meta-llama_Llama-3.1-8B")
+llama_model = LlamaForCausalLM.from_pretrained("backend/models/llama/meta-llama_Llama-3.1-8B").to(device)
+clip_model = CLIPModel.from_pretrained("backend/models/clip/clip-vit-base-patch32").to(device)
+clip_processor = CLIPProcessor.from_pretrained("backend/models/clip/clip-vit-base-patch32")
 
 # FAISS indexes
 faiss_index = faiss.IndexFlatL2(384)  # SentenceTransformer embeddings

@@ -2,3 +2,4 @@
 backend/models/
 backend/download_clip.py
 backend/download_llama.py
+backend/download_whisper.py
