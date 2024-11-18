@@ -1,0 +1,36 @@
+# Flask dependencies
+flask==2.3.2
+python-dotenv==1.0.0
+flask-limiter
+flask-cors
+flask-talisman
+
+# FAISS for retrieval
+faiss-cpu==1.7.3
+
+# Transformers and language models
+sentence-transformers==2.2.2
+transformers==4.34.0
+
+# Whisper for audio transcription
+openai-whisper==20230314
+
+# CLIP for image embeddings
+torch==2.0.1
+torchvision==0.15.2
+
+# MoviePy for video processing
+moviepy==1.0.3
+
+# Tesseract OCR for image-to-text
+pytesseract==0.3.10
+
+# LangChain for conversational agents
+langchain==0.0.299
+
+# Additional utilities
+Pillow==10.0.1
+requests==2.31.0
+PyPDF2
+python-docx
+pandas
