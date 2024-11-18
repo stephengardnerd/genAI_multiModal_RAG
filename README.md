@@ -41,7 +41,7 @@ The backend is built with **Flask** and serves as the central API layer for the 
    - Queries not answerable by the system are sent to the **Google Gemini API** for web search.
 
 ### **Backend Folder Structure**
-```plaintext
+
 backend/
 ├── app.py                # Main Flask application
 ├── requirements.txt      # Backend dependencies
