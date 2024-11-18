@@ -1,4 +1,4 @@
-# # **RAG System: Comprehensive Overview**
+## **RAG System: Comprehensive Overview**
 
 The **Retrieval-Augmented Generation (RAG)** system is an AI-driven application that integrates multiple AI models to handle multimodal inputs (text, images, audio, video, and hashed files). It employs a secure and scalable architecture using Docker, CI/CD pipelines, and OWASP-compliant best practices.
 
